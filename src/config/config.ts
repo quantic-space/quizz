@@ -1,7 +1,7 @@
 import config from 'config';
 
 class Config {
-  server_port = config.get('SERVER_PORT');
+  server_port = config.get('SERVER_PORT') || 5000;
   db_name = config.get('DB_NAME');
   db_host = config.get('DB_HOST');
   db_port = config.get('DB_PORT');
